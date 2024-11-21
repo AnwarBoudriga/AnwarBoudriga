@@ -1,0 +1,79 @@
+C:\Users\LENOVO>cd desktop
+
+C:\Users\LENOVO\Desktop>mkdir learn_git
+
+C:\Users\LENOVO\Desktop>cd learn_git
+
+C:\Users\LENOVO\Desktop\learn_git>git init
+Initialized empty Git repository in C:/Users/LENOVO/Desktop/learn_git/.git/
+
+C:\Users\LENOVO\Desktop\learn_git>git add .
+
+C:\Users\LENOVO\Desktop\learn_git>git commit -m  "adding third.txt"
+[master (root-commit) fd85d41] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+C:\Users\LENOVO\Desktop\learn_git>git log
+commit fd85d41fb2d39e1cf4f307098adb30fa366143ab (HEAD -> master)
+Author: AnwarBoudriga <boudrigaanwar@gmail.com>
+Date:   Wed Nov 20 21:22:42 2024 +0100
+
+    adding third.txt
+
+C:\Users\LENOVO\Desktop\learn_git>git add .
+
+C:\Users\LENOVO\Desktop\learn_git>git commit -m "adding fourth.txt"
+[master 8581c67] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+C:\Users\LENOVO\Desktop\learn_git>git add .
+
+C:\Users\LENOVO\Desktop\learn_git>git commit -m  "removing third.txt"
+[master ac088c5] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+C:\Users\LENOVO\Desktop\learn_git>git log
+commit ac088c5e8c946e3508391920019e8476e7218617 (HEAD -> master)
+Author: AnwarBoudriga <boudrigaanwar@gmail.com>
+Date:   Wed Nov 20 21:26:49 2024 +0100
+
+    removing third.txt
+
+commit 8581c672cd07c522b56963ffb9b7eabcca1afa04
+Author: AnwarBoudriga <boudrigaanwar@gmail.com>
+Date:   Wed Nov 20 21:25:59 2024 +0100
+
+    adding fourth.txt
+
+commit fd85d41fb2d39e1cf4f307098adb30fa366143ab
+Author: AnwarBoudriga <boudrigaanwar@gmail.com>
+Date:   Wed Nov 20 21:22:42 2024 +0100
+
+    adding third.txt
+
+C:\Users\LENOVO\Desktop\learn_git>git config --global core.pager cat
+
+C:\Users\LENOVO\Desktop\learn_git>git config --list --global
+user.email=boudrigaanwar@gmail.com
+user.name=AnwarBoudriga
+core.pager=cat
+
+C:\Users\LENOVO\Desktop\learn_git>git config --global
+error: no action specified
+
+C:\Users\LENOVO\Desktop\learn_git>git config --list --global
+user.email=boudrigaanwar@gmail.com
+user.name=AnwarBoudriga
+core.pager=cat
+
+C:\Users\LENOVO\Desktop\learn_git>git config --global user.name "AnwarBoudriga"
+
+C:\Users\LENOVO\Desktop\learn_git>git config --global --edit
+[user]
+        email = boudrigaanwar@gmail.com
+        name = AnwarBoudriga
+[core]
+        pager = cat
